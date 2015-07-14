@@ -4,11 +4,11 @@
 
     <name>JBossOSGi Parent</name>
 
-    <groupId>org.jboss.osgi</groupId>
+    <groupId>com.seeburger.fork</groupId>
     <artifactId>jbosgi-parent</artifactId>
     <packaging>pom</packaging>
 
-    <version>1.0.29-SNAPSHOT</version>
+    <version>1.0.29.SEE1-SNAPSHOT</version>
 
     <url>http://www.jboss.org/jbossas/osgi</url>
     <description>JBossOSGi</description>
@@ -81,8 +81,8 @@
         <version.slf4j>1.7.9</version.slf4j>
 
         <!-- WILDFLY release-synchronized versions -->
-        <version.jboss.wildfly>8.2.0.Final</version.jboss.wildfly>
-        <version.jboss.wildfly.stable>8.2.0.Final</version.jboss.wildfly.stable>
+        <version.jboss.wildfly>9.0.0.Final</version.jboss.wildfly>
+        <version.jboss.wildfly.stable>9.0.0.Final</version.jboss.wildfly.stable>
         <version.jboss.logging>3.1.4.GA</version.jboss.logging>
         <version.jboss.logging.processor>1.2.0.Final</version.jboss.logging.processor>
         <version.jboss.logmanager>1.5.2.Final</version.jboss.logmanager>
@@ -97,17 +97,17 @@
         <version.osgi>5.0.0</version.osgi>
 
         <!-- Distribution Management settings -->
-        <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2</jboss.releases.repo.url>
-        <jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots</jboss.snapshots.repo.url>
+        <jboss.releases.repo.url>https://repo.seeburger.de/archiva/repository/release/</jboss.releases.repo.url>
+        <jboss.snapshots.repo.url>https://repo.seeburger.de/archiva/repository/snapshot/</jboss.snapshots.repo.url>
 
         <argLine />
     </properties>
 
     <!-- Source -->
     <scm>
-        <connection>scm:git:git://github.com/jbosgi/jbosgi-parent.git</connection>
-        <developerConnection>scm:git:git@github.com:jbosgi/jbosgi-parent.git</developerConnection>
-        <url>http://github.com/jbosgi/jbosgi-parent</url>
+        <connection>scm:git:git://github.com/seeburger-ag/jbosgi-parent.git</connection>
+        <developerConnection>scm:git:git@github.com:seeburger-ag/jbosgi-parent.git</developerConnection>
+        <url>http://github.com/seeburger-ag/jbosgi-parent</url>
         <tag>HEAD</tag>
     </scm>
 
@@ -375,7 +375,7 @@
                     <version>${version.license.plugin}</version>
                 </plugin>
                 <!--
-                	This plugin's configuration is used to store Eclipse m2e settings only. 
+                	This plugin's configuration is used to store Eclipse m2e settings only.
                 	It has no influence on the Maven build itself.
                 -->
                 <plugin>
